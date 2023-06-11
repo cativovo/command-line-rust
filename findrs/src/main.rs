@@ -1,3 +1,7 @@
+use findrs::run;
+
 fn main() {
-    println!("Hello, world!");
+    if let Err(err) = run() {
+        eprintln!("{err}");
+    }
 }
